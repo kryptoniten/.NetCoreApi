@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Abstract\" />
+    <Folder Include="Concrete\" />
+    <Folder Include="AutoMapper\" />
+    <Folder Include="AutoMapper\Profiles\" />
+    <Folder Include="FluentValidation\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CustomerApp.Entities\CustomerApp.Entities.csproj" />
+    <ProjectReference Include="..\CustomerApp.Data\CustomerApp.Data.csproj" />
+    <ProjectReference Include="..\CustomerApp.Shared\CustomerApp.Shared.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.0" />
+    <PackageReference Include="FluentValidation" Version="9.5.0" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="9.5.0" />
+  </ItemGroup>
+</Project>

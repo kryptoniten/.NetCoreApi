@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{61E1A043-C481-42C2-AD4C-761B034A53ED}|Default">
+  <MonoDevelop.Ide.ItemProperties.CustomerApp.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CustomerApp.API/Controllers/CustomersController.cs">
+    <Files>
+      <File FileName="CustomerApp.API/Controllers/CustomersController.cs" Line="24" Column="10" />
+      <File FileName="CustomerApp.Services/FluentValidation/CustomerUpdateDtoValidator.cs" Line="30" Column="1" />
+      <File FileName="CustomerApp.Services/FluentValidation/CustomerAddDtoValidator.cs" Line="19" Column="86" />
+      <File FileName="CustomerApp.Services/Concrete/CustomerManager.cs" Line="67" Column="25" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CustomerApp" expanded="True">
+            <Node name="CustomerApp.Services" expanded="True">
+              <Node name="FluentValidation" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

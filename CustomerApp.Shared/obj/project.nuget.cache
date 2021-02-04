@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "f+INtUNaeOiQcKk8Vs1YkzwzXYizrWG4uMNlSZqUJnObS1Ey3VUlyWmqWALsbkKqbU/+IEVpSjT4H9PwWMQO9A==",
+  "success": true,
+  "projectFilePath": "/Users/kryptoniten/Projects/CustomerApp/CustomerApp.Shared/CustomerApp.Shared.csproj",
+  "expectedPackageFiles": [
+    "/Users/kryptoniten/.nuget/packages/automapper/10.1.0/automapper.10.1.0.nupkg.sha512",
+    "/Users/kryptoniten/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/8.1.0/automapper.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",
+    "/Users/kryptoniten/.nuget/packages/fluentvalidation/9.5.0/fluentvalidation.9.5.0.nupkg.sha512",
+    "/Users/kryptoniten/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
+    "/Users/kryptoniten/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/3.0.0/microsoft.extensions.dependencyinjection.abstractions.3.0.0.nupkg.sha512",
+    "/Users/kryptoniten/.nuget/packages/microsoft.extensions.options/3.0.0/microsoft.extensions.options.3.0.0.nupkg.sha512",
+    "/Users/kryptoniten/.nuget/packages/microsoft.extensions.primitives/3.0.0/microsoft.extensions.primitives.3.0.0.nupkg.sha512",
+    "/Users/kryptoniten/.nuget/packages/system.reflection.emit/4.7.0/system.reflection.emit.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

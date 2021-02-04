@@ -1,0 +1,12 @@
+/Users/kryptoniten/Projects/CustomerApp/CustomerApp.Shared/bin/Debug/net5.0/CustomerApp.Shared.deps.json
+/Users/kryptoniten/Projects/CustomerApp/CustomerApp.Shared/bin/Debug/net5.0/CustomerApp.Shared.dll
+/Users/kryptoniten/Projects/CustomerApp/CustomerApp.Shared/bin/Debug/net5.0/ref/CustomerApp.Shared.dll
+/Users/kryptoniten/Projects/CustomerApp/CustomerApp.Shared/bin/Debug/net5.0/CustomerApp.Shared.pdb
+/Users/kryptoniten/Projects/CustomerApp/CustomerApp.Shared/obj/Debug/net5.0/CustomerApp.Shared.csprojAssemblyReference.cache
+/Users/kryptoniten/Projects/CustomerApp/CustomerApp.Shared/obj/Debug/net5.0/CustomerApp.Shared.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kryptoniten/Projects/CustomerApp/CustomerApp.Shared/obj/Debug/net5.0/CustomerApp.Shared.AssemblyInfoInputs.cache
+/Users/kryptoniten/Projects/CustomerApp/CustomerApp.Shared/obj/Debug/net5.0/CustomerApp.Shared.AssemblyInfo.cs
+/Users/kryptoniten/Projects/CustomerApp/CustomerApp.Shared/obj/Debug/net5.0/CustomerApp.Shared.csproj.CoreCompileInputs.cache
+/Users/kryptoniten/Projects/CustomerApp/CustomerApp.Shared/obj/Debug/net5.0/CustomerApp.Shared.dll
+/Users/kryptoniten/Projects/CustomerApp/CustomerApp.Shared/obj/Debug/net5.0/ref/CustomerApp.Shared.dll
+/Users/kryptoniten/Projects/CustomerApp/CustomerApp.Shared/obj/Debug/net5.0/CustomerApp.Shared.pdb
