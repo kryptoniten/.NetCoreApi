@@ -60,11 +60,12 @@ namespace CustomerApp.Services.Concrete
             }
             else
             {
-                return new Result(ResultStatus.Warning, $"Bir veya daha fazla validasyon hatası ile karşılaşıldı.", new List<ValidationError>(){new ValidationError
-                    {
-                        PropertyName = "Customer Id",
-                        Message = $"{customer.Id} koduna ait bir Kullanıcı bulunamadı."
-                    }});
+
+                return new DataResult<CustomerDto>(ResultStatus.Warning, $"Bir veya daha fazla validasyon hatası ile karşılaşıldı.", null, new List<ValidationError>(){new ValidationError
+                {
+                    
+                    Message = $"{id}  koduna ait bir Kullancı bulunamadı."
+                }});
             }
         }
 
@@ -97,7 +98,7 @@ namespace CustomerApp.Services.Concrete
             }
             return new DataResult<CustomerDto>(ResultStatus.Warning, $"Bir veya daha fazla validasyon hatası ile karşılaşıldı.", null, new List<ValidationError>(){new ValidationError
                 {
-                    PropertyName = "categoryId",
+                   
                     Message = $"{id}  koduna ait bir Kullancı bulunamadı."
                 }});
 
@@ -130,7 +131,7 @@ namespace CustomerApp.Services.Concrete
             {
                 return new DataResult<CustomerDto>(ResultStatus.Warning, $"Bir veya daha fazla validasyon hatası ile karşılaşıldı.", null, new List<ValidationError>(){new ValidationError
                     {
-                        PropertyName = "Id",
+                        
                         Message = $"{customerUpdateDto.Id}  koduna ait bir kullanıcı bulunamadı."
                     }});
             }

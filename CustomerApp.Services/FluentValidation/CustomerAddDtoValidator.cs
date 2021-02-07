@@ -19,6 +19,7 @@ namespace CustomerApp.Services.FluentValidation
             RuleFor(c => c.Gender).NotEmpty().WithMessage("Cinsiyet Alanı Zorunludur.");
 
             RuleFor(c => c.EmailAddress).EmailAddress().WithMessage("Geçerli Bir E-Mail Adresi gir !");
+           
 
             RuleFor(c => c.Age).InclusiveBetween(15, 100).WithMessage("Yaşınızın minimum 15, Maksimum 100 Olması gerekir, veletler giremez !");
 

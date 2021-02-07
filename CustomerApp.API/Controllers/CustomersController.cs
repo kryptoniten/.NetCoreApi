@@ -102,7 +102,7 @@ namespace CustomerApp.API.Controllers
         public async Task<IActionResult> Delete(int id)
         {
             var deleteResult = await _customerService.DeleteAsync(id);
-            switch (deleteResult.ResultStatus)//ResultStatus
+            switch (deleteResult.ResultStatus)
             {
                 case ResultStatus.Warning:
                     return BadRequest(new ApiResult

@@ -5860,7 +5860,7 @@
       "outputPath": "/Users/kryptoniten/Projects/CustomerApp/CustomerApp.Data/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/kryptoniten/.nuget/NuGet/NuGet.Config"
+        "/Users/kryptoniten/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"

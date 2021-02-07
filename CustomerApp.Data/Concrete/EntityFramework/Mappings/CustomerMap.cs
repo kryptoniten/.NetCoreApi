@@ -23,6 +23,8 @@ namespace CustomerApp.Data.Concrete.EntityFramework.Mappings
 
             builder.Property(c => c.EmailAddress).IsRequired(false);
             builder.Property(c => c.EmailAddress).HasMaxLength(100);
+            
+
 
             builder.Property(c => c.Age).IsRequired(false);
 
