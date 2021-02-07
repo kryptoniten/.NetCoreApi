@@ -1,4 +1,4 @@
-﻿using System;
+﻿    using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -9,7 +9,7 @@ using CustomerApp.Shared.Entities.Concrete;
 using CustomerApp.Shared.Utilities.Results.ComplexTypes;
 using System.Net;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+
 
 namespace CustomerApp.API.Controllers
 {
@@ -29,12 +29,12 @@ namespace CustomerApp.API.Controllers
         [ProducesResponseType(400)]
         [ProducesResponseType(500)]
         [Route("[action]")]
-        public async Task<IActionResult> Add(CustomerAddDto customerAddDto)
+        public async Task<IActionResult> AddCustomer(CustomerAddDto customerAddDto)
         {
             var addResult = await _customerService.AddAsync(customerAddDto);
-            switch (addResult.ResultStatus)//ResultStatus
+            switch (addResult.ResultStatus)
             {
-                case ResultStatus.Warning:
+                case ResultStatus.Error:
                     return BadRequest(new ApiResult
                     {
                         ResultStatus = addResult.ResultStatus,
@@ -44,7 +44,7 @@ namespace CustomerApp.API.Controllers
                         ValidationErrors = addResult.ValidationErrors,
                         StatusCode = HttpStatusCode.BadRequest,
                     });
-                default: //ResultStatus.Success
+                default: 
                     return Ok(new ApiResult
                     {
                         ResultStatus = addResult.ResultStatus,
@@ -64,12 +64,12 @@ namespace CustomerApp.API.Controllers
         [ProducesResponseType(400)]
         [ProducesResponseType(500)]
         [Route("[action]")]
-        public async Task<IActionResult> Update(CustomerUpdateDto customerUpdateDto)
+        public async Task<IActionResult> UpdateCustomer(CustomerUpdateDto customerUpdateDto)
         {
             var updateResult = await _customerService.UpdateAsync(customerUpdateDto);
-            switch (updateResult.ResultStatus)//ResultStatus
+            switch (updateResult.ResultStatus)
             {
-                case ResultStatus.Warning:
+                case ResultStatus.Error:
                     return BadRequest(new ApiResult
                     {
                         ResultStatus = updateResult.ResultStatus,
@@ -99,29 +99,24 @@ namespace CustomerApp.API.Controllers
         [ProducesResponseType(400)]
         [ProducesResponseType(500)]
         [Route("[action]")]
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult> DeleteCustomerById(int id)
         {
             var deleteResult = await _customerService.DeleteAsync(id);
             switch (deleteResult.ResultStatus)
             {
-                case ResultStatus.Warning:
+                case ResultStatus.Error:
                     return BadRequest(new ApiResult
                     {
-                        ResultStatus = deleteResult.ResultStatus,
-                        Data = null,
-                        Detail = deleteResult.Message,
+                        ResultStatus = deleteResult.ResultStatus,   
                         Message = deleteResult.Message,
-                        
                         ValidationErrors = deleteResult.ValidationErrors,
                         StatusCode = HttpStatusCode.BadRequest,
                     });
-                default: //ResultStatus.Success
+                default: 
                     return Ok(new ApiResult
                     {
                         ResultStatus = deleteResult.ResultStatus,
-                        Data = null,
                         Message = deleteResult.Message,
-                        Detail = deleteResult.Message,
                         ValidationErrors = deleteResult.ValidationErrors,
                         StatusCode = HttpStatusCode.OK
                     });
@@ -136,12 +131,12 @@ namespace CustomerApp.API.Controllers
         [ProducesResponseType(500)]
         [Route("[action]")]
       
-        public async Task<IActionResult> GetAll()
+        public async Task<IActionResult> GellAllCustomers()
         {
             var customerResult = await _customerService.GetAllAsync();
             switch (customerResult.ResultStatus)
             {
-                case ResultStatus.Warning:
+                case ResultStatus.Error:
                     return BadRequest(new ApiResult
                     {
                         ResultStatus = customerResult.ResultStatus,
@@ -169,12 +164,13 @@ namespace CustomerApp.API.Controllers
         [ProducesResponseType(400)]
         [ProducesResponseType(500)]
         [Route("[action]")]
-        public async Task<IActionResult> GetById(int id)
+        public async Task<IActionResult> GetCustomerById(int id)
         {
             var getByIdResult = await _customerService.GetCustomerById(id);
+
             switch (getByIdResult.ResultStatus)
             {
-                case ResultStatus.Warning:
+                case ResultStatus.Error:
                     return BadRequest(new ApiResult
                     {
                         ResultStatus = getByIdResult.ResultStatus,
@@ -185,7 +181,7 @@ namespace CustomerApp.API.Controllers
                         ValidationErrors = getByIdResult.ValidationErrors,
                         StatusCode = HttpStatusCode.BadRequest,
                     });
-                default: 
+                default:
                     return Ok(new ApiResult
                     {
                         ResultStatus = getByIdResult.ResultStatus,
@@ -197,6 +193,9 @@ namespace CustomerApp.API.Controllers
                     });
             }
         }
+
+
+
 
 
     }

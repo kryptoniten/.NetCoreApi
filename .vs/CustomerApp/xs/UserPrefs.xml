@@ -1,35 +1,38 @@
 ﻿<Properties StartupConfiguration="{61E1A043-C481-42C2-AD4C-761B034A53ED}|Default">
   <MonoDevelop.Ide.ItemProperties.CustomerApp.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="CustomerApp.API/Controllers/CustomersController.cs">
+    <Files>
+      <File FileName="CustomerApp.Services/Concrete/CustomerManager.cs" Line="132" Column="70" />
+      <File FileName="CustomerApp.API/Controllers/CustomersController.cs" Line="66" Column="28" />
+      <File FileName="CustomerApp.Shared/Utilities/Validation/FluentValidation/ValidationTool.cs" Line="1" Column="1" />
+      <File FileName="CustomerApp.Services/FluentValidation/CustomerUpdateDtoValidator.cs" Line="24" Column="84" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="CustomerApp" expanded="True">
             <Node name="CustomerApp.API" expanded="True">
-              <Node name="Controllers" expanded="True" />
-            </Node>
-            <Node name="CustomerApp.Data" expanded="True">
-              <Node name="Concrete" expanded="True">
-                <Node name="EntityFramework" expanded="True">
-                  <Node name="Contexts" expanded="True" />
-                  <Node name="Mappings" expanded="True" />
-                </Node>
+              <Node name="Controllers" expanded="True">
+                <Node name="CustomersController.cs" selected="True" />
               </Node>
             </Node>
             <Node name="CustomerApp.Services" expanded="True">
+              <Node name="Abstract" expanded="True" />
               <Node name="Concrete" expanded="True" />
               <Node name="FluentValidation" expanded="True" />
             </Node>
             <Node name="CustomerApp.Shared" expanded="True">
               <Node name="Entities" expanded="True">
+                <Node name="ComplexTypes" expanded="True" />
                 <Node name="Concrete" expanded="True" />
               </Node>
               <Node name="Utilities" expanded="True">
                 <Node name="Results" expanded="True">
-                  <Node name="Concrete" expanded="True">
-                    <Node name="Result.cs" selected="True" />
-                  </Node>
+                  <Node name="Abstract" expanded="True" />
+                  <Node name="ComplexTypes" expanded="True" />
+                  <Node name="Concrete" expanded="True" />
                 </Node>
+                <Node name="Validation" expanded="True" />
               </Node>
             </Node>
           </Node>

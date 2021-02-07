@@ -32,7 +32,7 @@ namespace CustomerApp.Services.Concrete
             var result = ValidationTool.Validate(new CustomerAddDtoValidator(), customerAddDto);
             if(result.ResultStatus== ResultStatus.Error)
             {
-                return new DataResult<CustomerDto>(ResultStatus.Warning, $"Bir veya daha fazla validasyon hatası ile karşılaşıldı.", null, result.ValidationErrors);
+                return new DataResult<CustomerDto>(ResultStatus.Error, $"Bir veya daha fazla validasyon hatası ile karşılaşıldı.", null, result.ValidationErrors);
             }
             var customer = _mapper.Map<Customer>(customerAddDto);
              customer.CreatedDate = DateTime.UtcNow;
@@ -61,7 +61,7 @@ namespace CustomerApp.Services.Concrete
             else
             {
 
-                return new DataResult<CustomerDto>(ResultStatus.Warning, $"Bir veya daha fazla validasyon hatası ile karşılaşıldı.", null, new List<ValidationError>(){new ValidationError
+                return new DataResult<CustomerDto>(ResultStatus.Error, $"Bir veya daha fazla validasyon hatası ile karşılaşıldı.", null, new List<ValidationError>(){new ValidationError
                 {
                     
                     Message = $"{id}  koduna ait bir Kullancı bulunamadı."
@@ -96,7 +96,7 @@ namespace CustomerApp.Services.Concrete
                     Customer = customer
                 });
             }
-            return new DataResult<CustomerDto>(ResultStatus.Warning, $"Bir veya daha fazla validasyon hatası ile karşılaşıldı.", null, new List<ValidationError>(){new ValidationError
+            return new DataResult<CustomerDto>(ResultStatus.Error, $"Bir veya daha fazla validasyon hatası ile karşılaşıldı.", null, new List<ValidationError>(){new ValidationError
                 {
                    
                     Message = $"{id}  koduna ait bir Kullancı bulunamadı."
@@ -112,7 +112,7 @@ namespace CustomerApp.Services.Concrete
             var result = ValidationTool.Validate(new CustomerUpdateDtoValidator(), customerUpdateDto);
             if(result.ResultStatus == ResultStatus.Error)
             {
-                return new DataResult<CustomerDto>(ResultStatus.Warning, $"Bir veya daha fazla validasyon hatası ile karşılaşıldı.", null, result.ValidationErrors);
+                return new DataResult<CustomerDto>(ResultStatus.Error, $"Bir veya daha fazla validasyon hatası ile karşılaşıldı.", null, result.ValidationErrors);
             }
             var oldCustomer = await _dbContext.Customers.AsNoTracking().SingleOrDefaultAsync(c => c.Id == customerUpdateDto.Id);
             if(oldCustomer != null)
@@ -129,7 +129,7 @@ namespace CustomerApp.Services.Concrete
             }
             else
             {
-                return new DataResult<CustomerDto>(ResultStatus.Warning, $"Bir veya daha fazla validasyon hatası ile karşılaşıldı.", null, new List<ValidationError>(){new ValidationError
+                return new DataResult<CustomerDto>(ResultStatus.Error, $"Bir veya daha fazla validasyon hatası ile karşılaşıldı.", null, new List<ValidationError>(){new ValidationError
                     {
                         
                         Message = $"{customerUpdateDto.Id}  koduna ait bir kullanıcı bulunamadı."
